@@ -263,34 +263,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-r from-primary-600 to-brand-navy">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white lg:text-4xl">
-            Ready to Transform Your Payments?
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-primary-100">
-            Join thousands of businesses already using DekainPay to streamline
-            their payment processes.
-          </p>
-          <div className="mt-10 flex items-center justify-center gap-4">
-            <Button
-              size="lg"
-              className="bg-white text-primary-600 hover:bg-primary-50 px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
-            >
-              Start Free Trial
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="px-8 py-3 rounded-xl border-2 border-white/30 text-white hover:bg-white/10 transition-all duration-200"
-            >
-              Contact Sales
-            </Button>
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 }
