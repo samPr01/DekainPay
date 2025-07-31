@@ -77,16 +77,12 @@ export default function Navigation() {
               ))}
               <div className="px-3 py-2 space-y-2">
                 <Link
-                  to="/login"
+                  to="/contact"
                   className="block text-brand-gray hover:text-primary-600 transition-colors duration-200 font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   Sign In
                 </Link>
-                <Button className="w-full bg-primary-500 hover:bg-primary-600 text-white rounded-lg">
-                  Get Started
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
               </div>
             </div>
           </div>
