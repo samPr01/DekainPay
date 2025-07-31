@@ -42,15 +42,11 @@ export default function Navigation() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex lg:items-center lg:space-x-4">
             <Link
-              to="/login"
+              to="/contact"
               className="text-brand-gray hover:text-primary-600 transition-colors duration-200 font-medium"
             >
               Sign In
             </Link>
-            <Button className="bg-primary-500 hover:bg-primary-600 text-white px-6 py-2 rounded-lg">
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
           </div>
 
           {/* Mobile menu button */}
