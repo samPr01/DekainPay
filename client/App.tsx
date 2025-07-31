@@ -6,6 +6,9 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import PlaceholderPage from "./components/PlaceholderPage";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
@@ -17,11 +20,51 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Navigation />
+        <main>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/features" element={
+              <PlaceholderPage
+                title="Features"
+                description="Discover the powerful features that make DekainPay the preferred choice for businesses worldwide."
+              />
+            } />
+            <Route path="/solutions" element={
+              <PlaceholderPage
+                title="Solutions"
+                description="Explore tailored payment solutions designed for different industries and business sizes."
+              />
+            } />
+            <Route path="/pricing" element={
+              <PlaceholderPage
+                title="Pricing"
+                description="Simple, transparent pricing that scales with your business growth."
+              />
+            } />
+            <Route path="/resources" element={
+              <PlaceholderPage
+                title="Resources"
+                description="Access documentation, guides, and resources to help you succeed with DekainPay."
+              />
+            } />
+            <Route path="/about" element={
+              <PlaceholderPage
+                title="About DekainPay"
+                description="Learn about our mission to revolutionize digital payments and our commitment to innovation."
+              />
+            } />
+            <Route path="/login" element={
+              <PlaceholderPage
+                title="Sign In"
+                description="Access your DekainPay dashboard and manage your payment infrastructure."
+              />
+            } />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+        <Footer />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
