@@ -26,12 +26,7 @@ const App = () => (
         <main>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/features" element={
-              <PlaceholderPage
-                title="Features"
-                description="Discover the powerful features that make DekainPay the preferred choice for businesses worldwide."
-              />
-            } />
+            <Route path="/features" element={<Features />} />
             <Route path="/contact" element={
               <PlaceholderPage
                 title="Contact"
