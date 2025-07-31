@@ -296,6 +296,42 @@ export default function Features() {
           </div>
         </div>
       </section>
+
+      {/* FAQs Section */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl font-bold tracking-tight text-brand-navy lg:text-4xl mb-6">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg leading-8 text-brand-gray">
+              Get answers to common questions about DekainPay's features, security, and implementation.
+            </p>
+          </div>
+          <div className="bg-white rounded-2xl shadow-lg border border-primary-100 overflow-hidden">
+            {faqs.map((faq, index) => (
+              <FAQItem
+                key={index}
+                question={faq.question}
+                answer={faq.answer}
+                isOpen={openFAQ === index}
+                onToggle={() => setOpenFAQ(openFAQ === index ? null : index)}
+              />
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <p className="text-brand-gray mb-6">
+              Still have questions? Our support team is here to help.
+            </p>
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center px-6 py-3 border border-primary-200 rounded-xl text-primary-600 font-medium hover:bg-primary-50 hover:border-primary-300 transition-all duration-200"
+            >
+              Contact Support
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
