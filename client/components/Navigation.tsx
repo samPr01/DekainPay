@@ -14,10 +14,10 @@ export default function Navigation() {
   ];
 
   const scrollToSection = (href: string) => {
-    if (href.startsWith('#')) {
+    if (href.startsWith("#")) {
       const element = document.querySelector(href);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
     setIsOpen(false);
@@ -54,7 +54,7 @@ export default function Navigation() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex lg:items-center lg:space-x-4">
             <button
-              onClick={() => scrollToSection('#contact')}
+              onClick={() => scrollToSection("#contact")}
               className="text-brand-gray hover:text-primary-600 transition-colors duration-200 font-medium"
             >
               Sign In
@@ -92,7 +92,7 @@ export default function Navigation() {
               ))}
               <div className="px-3 py-2 space-y-2">
                 <button
-                  onClick={() => scrollToSection('#contact')}
+                  onClick={() => scrollToSection("#contact")}
                   className="block w-full text-left text-brand-gray hover:text-primary-600 transition-colors duration-200 font-medium"
                 >
                   Sign In
