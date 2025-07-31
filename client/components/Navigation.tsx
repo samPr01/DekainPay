@@ -7,11 +7,10 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
-    { name: 'Features', href: '/features' },
-    { name: 'Solutions', href: '/solutions' },
-    { name: 'Pricing', href: '/pricing' },
-    { name: 'Resources', href: '/resources' },
+    { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
+    { name: 'Features', href: '/features' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
