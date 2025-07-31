@@ -82,14 +82,13 @@ export default function Navigation() {
           <div className="lg:hidden">
             <div className="space-y-1 pb-3 pt-2">
               {navigation.map((item) => (
-                <Link
+                <button
                   key={item.name}
-                  to={item.href}
-                  className="block px-3 py-2 text-brand-gray hover:text-primary-600 transition-colors duration-200 font-medium"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => scrollToSection(item.href)}
+                  className="block w-full text-left px-3 py-2 text-brand-gray hover:text-primary-600 transition-colors duration-200 font-medium"
                 >
                   {item.name}
-                </Link>
+                </button>
               ))}
               <div className="px-3 py-2 space-y-2">
                 <Link
