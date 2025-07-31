@@ -91,13 +91,12 @@ export default function Navigation() {
                 </button>
               ))}
               <div className="px-3 py-2 space-y-2">
-                <Link
-                  to="/contact"
-                  className="block text-brand-gray hover:text-primary-600 transition-colors duration-200 font-medium"
-                  onClick={() => setIsOpen(false)}
+                <button
+                  onClick={() => scrollToSection('#contact')}
+                  className="block w-full text-left text-brand-gray hover:text-primary-600 transition-colors duration-200 font-medium"
                 >
                   Sign In
-                </Link>
+                </button>
               </div>
             </div>
           </div>
