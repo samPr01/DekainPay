@@ -1,28 +1,30 @@
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
   };
 
   return (
@@ -35,7 +37,8 @@ export default function Contact() {
               Contact
             </h1>
             <p className="text-lg leading-8 text-brand-gray">
-              Get in touch with our team to learn more about DekainPay solutions.
+              Get in touch with our team to learn more about DekainPay
+              solutions.
             </p>
           </div>
         </div>
@@ -64,7 +67,7 @@ export default function Contact() {
                   required
                 />
               </div>
-              
+
               <div>
                 <Label htmlFor="email" className="text-brand-navy font-medium">
                   Your Email
@@ -80,9 +83,12 @@ export default function Contact() {
                   required
                 />
               </div>
-              
+
               <div>
-                <Label htmlFor="subject" className="text-brand-navy font-medium">
+                <Label
+                  htmlFor="subject"
+                  className="text-brand-navy font-medium"
+                >
                   Subject
                 </Label>
                 <Input
@@ -96,9 +102,12 @@ export default function Contact() {
                   required
                 />
               </div>
-              
+
               <div>
-                <Label htmlFor="message" className="text-brand-navy font-medium">
+                <Label
+                  htmlFor="message"
+                  className="text-brand-navy font-medium"
+                >
                   Message
                 </Label>
                 <Textarea
@@ -111,7 +120,7 @@ export default function Contact() {
                   required
                 />
               </div>
-              
+
               <Button
                 type="submit"
                 className="w-full bg-primary-500 hover:bg-primary-600 text-white py-3 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"

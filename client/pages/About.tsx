@@ -11,10 +11,10 @@ export default function About() {
               About Us
             </h2>
             <p className="text-lg leading-8 text-brand-gray">
-              DekainPay revolutionizes digital payments with cutting-edge technology,
-              seamless user experiences, and enterprise-grade security. Transform how
-              your business handles transactions with our innovative fintech solutions
-              designed for the modern economy.
+              DekainPay revolutionizes digital payments with cutting-edge
+              technology, seamless user experiences, and enterprise-grade
+              security. Transform how your business handles transactions with
+              our innovative fintech solutions designed for the modern economy.
             </p>
           </div>
         </div>
@@ -36,28 +36,37 @@ export default function About() {
               <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary-50 to-white p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-primary-100">
                 <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary-400 to-brand-teal rounded-full translate-x-8 -translate-y-8 opacity-20"></div>
                 <Zap className="h-12 w-12 text-primary-500 mb-4" />
-                <h3 className="text-xl font-semibold text-brand-navy mb-3">Instant Payment</h3>
+                <h3 className="text-xl font-semibold text-brand-navy mb-3">
+                  Instant Payment
+                </h3>
                 <p className="text-brand-gray leading-relaxed">
-                  Process payments in real-time with lightning-fast transaction speeds.
-                  Instant settlements and immediate confirmations for superior user experience.
+                  Process payments in real-time with lightning-fast transaction
+                  speeds. Instant settlements and immediate confirmations for
+                  superior user experience.
                 </p>
               </div>
               <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-brand-teal/10 to-white p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-brand-teal/20">
                 <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-brand-teal to-primary-400 rounded-full translate-x-8 -translate-y-8 opacity-20"></div>
                 <Shield className="h-12 w-12 text-brand-teal mb-4" />
-                <h3 className="text-xl font-semibold text-brand-navy mb-3">Secure Transaction</h3>
+                <h3 className="text-xl font-semibold text-brand-navy mb-3">
+                  Secure Transaction
+                </h3>
                 <p className="text-brand-gray leading-relaxed">
-                  Bank-grade encryption and multi-layer security protocols ensure every
-                  transaction is protected with the highest industry standards.
+                  Bank-grade encryption and multi-layer security protocols
+                  ensure every transaction is protected with the highest
+                  industry standards.
                 </p>
               </div>
               <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary-50 to-white p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-primary-100">
                 <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary-400 to-brand-teal rounded-full translate-x-8 -translate-y-8 opacity-20"></div>
                 <UserCheck className="h-12 w-12 text-primary-500 mb-4" />
-                <h3 className="text-xl font-semibold text-brand-navy mb-3">Seamless Onboarding</h3>
+                <h3 className="text-xl font-semibold text-brand-navy mb-3">
+                  Seamless Onboarding
+                </h3>
                 <p className="text-brand-gray leading-relaxed">
-                  Get started in minutes with our intuitive setup process. Simple integration
-                  and comprehensive documentation make implementation effortless.
+                  Get started in minutes with our intuitive setup process.
+                  Simple integration and comprehensive documentation make
+                  implementation effortless.
                 </p>
               </div>
             </div>

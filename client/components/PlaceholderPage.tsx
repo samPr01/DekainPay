@@ -1,12 +1,15 @@
-import { ArrowRight, Construction } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { ArrowRight, Construction } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface PlaceholderPageProps {
   title: string;
   description: string;
 }
 
-export default function PlaceholderPage({ title, description }: PlaceholderPageProps) {
+export default function PlaceholderPage({
+  title,
+  description,
+}: PlaceholderPageProps) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary-50/30 to-background pt-20">
       <div className="mx-auto max-w-4xl px-6 py-24 text-center">
@@ -22,8 +25,8 @@ export default function PlaceholderPage({ title, description }: PlaceholderPageP
             Coming Soon
           </h3>
           <p className="text-brand-gray mb-6">
-            This page is currently under development. We're working hard to bring you 
-            comprehensive information about DekainPay's capabilities.
+            This page is currently under development. We're working hard to
+            bring you comprehensive information about DekainPay's capabilities.
           </p>
           <Button className="bg-primary-500 hover:bg-primary-600 text-white w-full">
             Continue to Explore

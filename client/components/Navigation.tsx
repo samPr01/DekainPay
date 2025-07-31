@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import { Menu, X, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
+import { useState } from "react";
+import { Menu, X, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Features', href: '/features' },
-    { name: 'Contact', href: '/contact' },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Features", href: "/features" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -22,7 +22,9 @@ export default function Navigation() {
               <div className="w-8 h-8 bg-gradient-to-r from-primary-500 to-brand-teal rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">D</span>
               </div>
-              <span className="text-xl font-bold text-brand-navy">DekainPay</span>
+              <span className="text-xl font-bold text-brand-navy">
+                DekainPay
+              </span>
             </Link>
           </div>
 
@@ -56,7 +58,11 @@ export default function Navigation() {
               className="text-brand-gray"
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>

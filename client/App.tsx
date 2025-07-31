@@ -31,12 +31,15 @@ const App = () => (
             <Route path="/features" element={<Features />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
-            <Route path="/login" element={
-              <PlaceholderPage
-                title="Sign In"
-                description="Access your DekainPay dashboard and manage your payment infrastructure."
-              />
-            } />
+            <Route
+              path="/login"
+              element={
+                <PlaceholderPage
+                  title="Sign In"
+                  description="Access your DekainPay dashboard and manage your payment infrastructure."
+                />
+              }
+            />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
