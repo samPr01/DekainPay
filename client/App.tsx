@@ -30,22 +30,10 @@ const App = () => (
                 description="Discover the powerful features that make DekainPay the preferred choice for businesses worldwide."
               />
             } />
-            <Route path="/solutions" element={
+            <Route path="/contact" element={
               <PlaceholderPage
-                title="Solutions"
-                description="Explore tailored payment solutions designed for different industries and business sizes."
-              />
-            } />
-            <Route path="/pricing" element={
-              <PlaceholderPage
-                title="Pricing"
-                description="Simple, transparent pricing that scales with your business growth."
-              />
-            } />
-            <Route path="/resources" element={
-              <PlaceholderPage
-                title="Resources"
-                description="Access documentation, guides, and resources to help you succeed with DekainPay."
+                title="Contact"
+                description="Get in touch with our team to learn more about DekainPay solutions."
               />
             } />
             <Route path="/about" element={
