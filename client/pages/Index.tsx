@@ -392,7 +392,213 @@ export default function Index() {
         </div>
       </section>
 
+      {/* About Section */}
+      <section id="about" className="py-16 lg:py-24 bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl text-center animate-fade-in">
+            <h2 className="text-3xl font-bold tracking-tight text-brand-navy lg:text-4xl mb-6">
+              About Us
+            </h2>
+            <p className="text-lg leading-8 text-brand-gray mb-16">
+              DekainPay revolutionizes digital payments with cutting-edge technology,
+              seamless user experiences, and enterprise-grade security. Transform how
+              your business handles transactions with our innovative fintech solutions
+              designed for the modern economy.
+            </p>
+          </div>
 
+          {/* Services Grid */}
+          <div className="mx-auto max-w-6xl">
+            <div className="mx-auto max-w-2xl text-center mb-16">
+              <h3 className="text-2xl font-bold tracking-tight text-brand-navy lg:text-3xl">
+                Our Services
+              </h3>
+              <p className="mt-4 text-lg leading-8 text-brand-gray">
+                Comprehensive payment solutions tailored to your business needs
+              </p>
+            </div>
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary-50 to-white p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-primary-100">
+                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary-400 to-brand-teal rounded-full translate-x-8 -translate-y-8 opacity-20"></div>
+                <Zap className="h-12 w-12 text-primary-500 mb-4" />
+                <h4 className="text-xl font-semibold text-brand-navy mb-3">Instant Payment</h4>
+                <p className="text-brand-gray leading-relaxed">
+                  Process payments in real-time with lightning-fast transaction speeds.
+                  Instant settlements and immediate confirmations for superior user experience.
+                </p>
+              </div>
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-brand-teal/10 to-white p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-brand-teal/20">
+                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-brand-teal to-primary-400 rounded-full translate-x-8 -translate-y-8 opacity-20"></div>
+                <Shield className="h-12 w-12 text-brand-teal mb-4" />
+                <h4 className="text-xl font-semibold text-brand-navy mb-3">Secure Transaction</h4>
+                <p className="text-brand-gray leading-relaxed">
+                  Bank-grade encryption and multi-layer security protocols ensure every
+                  transaction is protected with the highest industry standards.
+                </p>
+              </div>
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary-50 to-white p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-primary-100">
+                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary-400 to-brand-teal rounded-full translate-x-8 -translate-y-8 opacity-20"></div>
+                <UserCheck className="h-12 w-12 text-primary-500 mb-4" />
+                <h4 className="text-xl font-semibold text-brand-navy mb-3">Seamless Onboarding</h4>
+                <p className="text-brand-gray leading-relaxed">
+                  Get started in minutes with our intuitive setup process. Simple integration
+                  and comprehensive documentation make implementation effortless.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Detailed Features Section */}
+      <section id="features" className="py-16 lg:py-24 bg-gradient-to-br from-primary-50/30 to-background">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl font-bold tracking-tight text-brand-navy lg:text-4xl mb-6">
+              Comprehensive Features
+            </h2>
+            <p className="text-lg leading-8 text-brand-gray">
+              Discover the powerful features that make DekainPay the preferred choice for businesses worldwide.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {detailedFeatures.map((feature, index) => (
+              <div
+                key={feature.title}
+                className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-primary-100 hover:border-primary-200 animate-fade-in"
+                style={{animationDelay: `${index * 0.1}s`}}
+              >
+                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-primary-400/20 to-brand-teal/20 rounded-full translate-x-6 -translate-y-6"></div>
+                <feature.icon className="h-10 w-10 text-primary-500 mb-4 group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="text-lg font-semibold text-brand-navy mb-3 group-hover:text-primary-600 transition-colors duration-200">
+                  {feature.title}
+                </h3>
+                <p className="text-brand-gray leading-relaxed text-sm">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs Section */}
+      <section id="faqs" className="py-16 lg:py-24 bg-white">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl font-bold tracking-tight text-brand-navy lg:text-4xl mb-6">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg leading-8 text-brand-gray">
+              Get answers to common questions about DekainPay's features, security, and implementation.
+            </p>
+          </div>
+          <div className="bg-white rounded-2xl shadow-lg border border-primary-100 overflow-hidden">
+            {faqs.map((faq, index) => (
+              <FAQItem
+                key={index}
+                question={faq.question}
+                answer={faq.answer}
+                isOpen={openFAQ === index}
+                onToggle={() => setOpenFAQ(openFAQ === index ? null : index)}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-16 lg:py-24 bg-gradient-to-br from-primary-50/30 to-background">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl font-bold tracking-tight text-brand-navy lg:text-4xl mb-6">
+              Contact Us
+            </h2>
+            <p className="text-lg leading-8 text-brand-gray">
+              Get in touch with our team to learn more about DekainPay solutions.
+            </p>
+          </div>
+
+          <div className="mx-auto max-w-4xl">
+            <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12 border border-primary-100">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <Label htmlFor="name" className="text-brand-navy font-medium">
+                      Your Name
+                    </Label>
+                    <Input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="mt-2 border-primary-200 focus:border-primary-500 focus:ring-primary-500"
+                      placeholder="Enter your full name"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <Label htmlFor="email" className="text-brand-navy font-medium">
+                      Your Email
+                    </Label>
+                    <Input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="mt-2 border-primary-200 focus:border-primary-500 focus:ring-primary-500"
+                      placeholder="Enter your email address"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <Label htmlFor="subject" className="text-brand-navy font-medium">
+                    Subject
+                  </Label>
+                  <Input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    className="mt-2 border-primary-200 focus:border-primary-500 focus:ring-primary-500"
+                    placeholder="Enter the subject of your inquiry"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <Label htmlFor="message" className="text-brand-navy font-medium">
+                    Message
+                  </Label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    className="mt-2 border-primary-200 focus:border-primary-500 focus:ring-primary-500 min-h-[120px]"
+                    placeholder="Enter your message or inquiry details"
+                    required
+                  />
+                </div>
+
+                <Button
+                  type="submit"
+                  className="w-full bg-primary-500 hover:bg-primary-600 text-white py-3 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
+                >
+                  Send Message
+                </Button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
