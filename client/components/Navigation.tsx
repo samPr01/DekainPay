@@ -41,13 +41,13 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex lg:items-center lg:space-x-8">
             {navigation.map((item) => (
-              <Link
+              <button
                 key={item.name}
-                to={item.href}
+                onClick={() => scrollToSection(item.href)}
                 className="text-brand-gray hover:text-primary-600 transition-colors duration-200 font-medium"
               >
                 {item.name}
-              </Link>
+              </button>
             ))}
           </div>
 
