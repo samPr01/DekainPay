@@ -22,7 +22,123 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 
+const FAQItem = ({ question, answer, isOpen, onToggle }: {
+  question: string;
+  answer: string;
+  isOpen: boolean;
+  onToggle: () => void;
+}) => (
+  <div className="border-b border-primary-100 last:border-b-0">
+    <button
+      className="w-full py-6 text-left flex justify-between items-center hover:text-primary-600 transition-colors duration-200"
+      onClick={onToggle}
+    >
+      <span className="text-lg font-semibold text-brand-navy pr-4">{question}</span>
+      {isOpen ? (
+        <Minus className="h-5 w-5 text-primary-500 flex-shrink-0" />
+      ) : (
+        <Plus className="h-5 w-5 text-primary-500 flex-shrink-0" />
+      )}
+    </button>
+    {isOpen && (
+      <div className="pb-6 text-brand-gray leading-relaxed animate-fade-in">
+        {answer}
+      </div>
+    )}
+  </div>
+);
+
 export default function Index() {
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log('Form submitted:', formData);
+  };
+
+  const faqs = [
+    {
+      question: "How quickly can I start processing payments with DekainPay?",
+      answer: "With our seamless onboarding process, you can start processing payments within 24 hours. Our quick setup wizard guides you through account verification, integration, and testing, ensuring you're ready to accept payments with minimal downtime."
+    },
+    {
+      question: "What security measures does DekainPay implement?",
+      answer: "DekainPay employs bank-grade encryption, multi-factor authentication, PCI DSS compliance, and advanced fraud detection algorithms. All transactions are processed through secure, encrypted channels with real-time monitoring to protect against threats."
+    },
+    {
+      question: "Which payment methods and currencies does DekainPay support?",
+      answer: "We support all major payment methods including credit/debit cards, digital wallets, bank transfers, and cryptocurrency. DekainPay processes transactions in 190+ countries with support for multiple currencies and automatic conversion."
+    },
+    {
+      question: "How does DekainPay's pricing structure work?",
+      answer: "DekainPay offers transparent, competitive pricing with no hidden fees. Our rates are based on transaction volume with discounts for high-volume merchants. Contact our sales team for custom enterprise pricing tailored to your business needs."
+    },
+    {
+      question: "Can DekainPay integrate with my existing business systems?",
+      answer: "Yes! DekainPay provides comprehensive APIs, SDKs, and pre-built integrations for popular platforms like Shopify, WooCommerce, and enterprise ERPs. Our developer-friendly documentation makes integration straightforward."
+    },
+    {
+      question: "What kind of support does DekainPay provide?",
+      answer: "We offer 24/7 customer support through multiple channels including live chat, email, and phone. Our dedicated support team includes technical specialists who can assist with integration, troubleshooting, and optimization."
+    }
+  ];
+
+  const detailedFeatures = [
+    {
+      icon: Zap,
+      title: "Instant Payments",
+      description: "Process payments in real-time with lightning-fast transaction speeds. Instant settlements and immediate confirmations for superior user experience."
+    },
+    {
+      icon: Shield,
+      title: "Secure Transactions",
+      description: "Bank-grade encryption and multi-layer security protocols ensure every transaction is protected with the highest industry standards."
+    },
+    {
+      icon: UserCheck,
+      title: "Seamless Onboarding",
+      description: "Get started in minutes with our intuitive setup process. Simple integration and comprehensive documentation make implementation effortless."
+    },
+    {
+      icon: Clock,
+      title: "Faster Settlements",
+      description: "Accelerated settlement times with automated reconciliation and instant fund availability."
+    },
+    {
+      icon: Scale,
+      title: "Dispute Resolution",
+      description: "Streamlined dispute management system with automated workflows and comprehensive tracking."
+    },
+    {
+      icon: Layers,
+      title: "Scalable Solutions",
+      description: "Infrastructure that grows with your business, handling millions of transactions seamlessly."
+    },
+    {
+      icon: User,
+      title: "User-Friendly Processes",
+      description: "Intuitive interfaces and simplified workflows designed for optimal user experience."
+    },
+    {
+      icon: Activity,
+      title: "Real-Time Tracking",
+      description: "Monitor transactions, analytics, and performance metrics with live dashboards and alerts."
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary-50/30 to-background">
       {/* Hero Section */}
