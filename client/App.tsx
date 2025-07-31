@@ -37,12 +37,7 @@ const App = () => (
                 description="Get in touch with our team to learn more about DekainPay solutions."
               />
             } />
-            <Route path="/about" element={
-              <PlaceholderPage
-                title="About DekainPay"
-                description="Learn about our mission to revolutionize digital payments and our commitment to innovation."
-              />
-            } />
+            <Route path="/about" element={<About />} />
             <Route path="/login" element={
               <PlaceholderPage
                 title="Sign In"
