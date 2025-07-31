@@ -1,13 +1,16 @@
-import { 
-  Zap, 
-  Shield, 
-  Clock, 
-  Scale, 
-  Layers, 
-  User, 
-  Activity, 
-  Code 
+import {
+  Zap,
+  Shield,
+  Clock,
+  Scale,
+  Layers,
+  User,
+  Activity,
+  Code,
+  Plus,
+  Minus
 } from "lucide-react";
+import { useState } from "react";
 
 export default function Features() {
   const features = [
