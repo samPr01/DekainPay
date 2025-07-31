@@ -12,6 +12,7 @@ import PlaceholderPage from "./components/PlaceholderPage";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Features from "./pages/Features";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
