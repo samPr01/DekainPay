@@ -26,9 +26,6 @@ export default function Index() {
                   Get Started
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button variant="outline" size="lg" className="px-8 py-3 rounded-xl border-2 border-primary-200 hover:border-primary-300 hover:bg-primary-50 transition-all duration-200">
-                  Watch Demo
-                </Button>
               </div>
             </div>
             <div className="relative lg:ml-10 animate-slide-in-left">
