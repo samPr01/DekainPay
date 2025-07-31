@@ -1,49 +1,4 @@
-import { Link } from 'react-router-dom';
-import { Twitter, Linkedin, Github, Mail } from 'lucide-react';
-
 export default function Footer() {
-  const navigation = {
-    product: [
-      { name: 'Features', href: '/features' },
-      { name: 'Integrations', href: '/integrations' },
-      { name: 'Pricing', href: '/pricing' },
-      { name: 'API Docs', href: '/docs' },
-    ],
-    company: [
-      { name: 'About', href: '/about' },
-      { name: 'Blog', href: '/blog' },
-      { name: 'Careers', href: '/careers' },
-      { name: 'Contact', href: '/contact' },
-    ],
-    resources: [
-      { name: 'Help Center', href: '/help' },
-      { name: 'Security', href: '/security' },
-      { name: 'Status', href: '/status' },
-      { name: 'Terms', href: '/terms' },
-    ],
-    social: [
-      {
-        name: 'Twitter',
-        href: '#',
-        icon: Twitter,
-      },
-      {
-        name: 'LinkedIn',
-        href: '#',
-        icon: Linkedin,
-      },
-      {
-        name: 'GitHub',
-        href: '#',
-        icon: Github,
-      },
-      {
-        name: 'Email',
-        href: 'mailto:hello@dekainpay.com',
-        icon: Mail,
-      },
-    ],
-  };
 
   return (
     <footer className="bg-brand-navy" aria-labelledby="footer-heading">
