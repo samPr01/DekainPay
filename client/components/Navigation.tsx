@@ -90,7 +90,7 @@ export default function Navigation() {
               {navigation.map((item) => (
                 <button
                   key={item.name}
-                  onClick={() => scrollToSection(item.href)}
+                  onClick={() => handleNavigation(item.href, item.route)}
                   className="block w-full text-left px-3 py-2 text-brand-gray hover:text-primary-600 transition-colors duration-200 font-medium"
                 >
                   {item.name}
