@@ -70,12 +70,16 @@ export default function Index() {
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
-      setTimeout(() => {
-        const element = document.querySelector(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100);
+      // Extract just the hash fragment, removing any query parameters
+      const cleanHash = hash.split('?')[0].split('&')[0];
+      if (cleanHash && cleanHash.startsWith('#')) {
+        setTimeout(() => {
+          const element = document.querySelector(cleanHash);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100);
+      }
     }
   }, []);
 
