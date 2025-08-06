@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
-import { MapPin } from "lucide-react";
+import { Link } from 'react-router-dom';
+import { MapPin } from 'lucide-react';
 
 export default function Footer() {
   const navigation = {
     company: [
-      { name: "About Us", href: "/about-page" },
-      { name: "FAQs", href: "/faqs-page" },
-      { name: "Privacy Policy", href: "/privacy-policy" },
-      { name: "Refunds & Cancellation", href: "/refunds-cancellation" },
+      { name: 'About Us', href: '/about-page' },
+      { name: 'FAQs', href: '/faqs-page' },
+      { name: 'Privacy Policy', href: '/privacy-policy' },
+      { name: 'Refunds & Cancellation', href: '/refunds-cancellation' },
     ],
   };
 
@@ -34,9 +34,7 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h3 className="text-sm font-semibold leading-6 text-white mb-4">
-              Company
-            </h3>
+            <h3 className="text-sm font-semibold leading-6 text-white mb-4">Company</h3>
             <ul role="list" className="space-y-3">
               {navigation.company.map((item) => (
                 <li key={item.name}>
@@ -53,16 +51,13 @@ export default function Footer() {
 
           {/* Address */}
           <div>
-            <h3 className="text-sm font-semibold leading-6 text-white mb-4">
-              Address
-            </h3>
+            <h3 className="text-sm font-semibold leading-6 text-white mb-4">Address</h3>
             <div className="flex items-start space-x-3">
               <MapPin className="h-4 w-4 text-primary-200 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="text-sm leading-6 text-primary-200">
-                  213, Diamond Trading Centre
-                  <br />
-                  New Palasia Indore 452001
+                  213, Diamond Trading Centre<br />
+                  New Palasia, Indore 452001 (MP) India
                 </p>
               </div>
             </div>
