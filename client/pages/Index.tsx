@@ -566,9 +566,43 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="mx-auto max-w-4xl">
-            <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12 border border-primary-100">
-              <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="mx-auto max-w-6xl">
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
+              {/* Contact Information */}
+              <div className="space-y-8">
+                <div className="bg-white rounded-2xl shadow-lg p-8 border border-primary-100">
+                  <h3 className="text-2xl font-bold text-brand-navy mb-6">Get in Touch</h3>
+                  <div className="space-y-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Mail className="h-6 w-6 text-primary-600" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-brand-navy mb-1">Email</h4>
+                        <p className="text-brand-gray">agentxofficialwork@gmail.com</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <MapPin className="h-6 w-6 text-primary-600" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-brand-navy mb-1">Address</h4>
+                        <p className="text-brand-gray">
+                          213, Diamond Trading Centre<br />
+                          New Palasia Indore 452001
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Contact Form */}
+              <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12 border border-primary-100">
+                <h3 className="text-2xl font-bold text-brand-navy mb-6">Send us a Message</h3>
+                <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <Label
@@ -652,7 +686,8 @@ export default function Index() {
                 >
                   Send Message
                 </Button>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
