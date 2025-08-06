@@ -16,15 +16,18 @@ export default function Navigation() {
   ];
 
   const handleNavigation = (href: string, route: string) => {
-    if (location.pathname === route && href.startsWith("#")) {
+    // Clean the href to ensure it's a valid selector
+    const cleanHref = href.split('?')[0].split('&')[0];
+
+    if (location.pathname === route && cleanHref.startsWith("#")) {
       // If we're on the home page, use smooth scroll
-      const element = document.querySelector(href);
+      const element = document.querySelector(cleanHref);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     } else {
       // If we're on a different page, navigate to home page with the hash
-      navigate(route + href);
+      navigate(route + cleanHref);
     }
     setIsOpen(false);
   };
