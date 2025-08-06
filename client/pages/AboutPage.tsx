@@ -157,7 +157,7 @@ export default function AboutPage() {
             <div className="space-y-4">
               <p className="text-brand-navy font-medium">Email: agentxofficialwork@gmail.com</p>
               <p className="text-brand-navy font-medium">
-                Address: 213, Diamond Trading Centre, New Palasia, Indore 452001 (MP) India
+                Address: 213, Diamond Trading Centre, New Palasia, Indore 474001 (MP) India
               </p>
             </div>
           </div>
