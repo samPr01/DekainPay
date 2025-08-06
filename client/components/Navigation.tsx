@@ -17,7 +17,7 @@ export default function Navigation() {
 
   const handleNavigation = (href: string, route: string) => {
     // Clean the href to ensure it's a valid selector
-    const cleanHref = href.split('?')[0].split('&')[0];
+    const cleanHref = href.split("?")[0].split("&")[0];
 
     if (location.pathname === route && cleanHref.startsWith("#")) {
       // If we're on the home page, use smooth scroll

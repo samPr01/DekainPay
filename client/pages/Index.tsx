@@ -71,8 +71,8 @@ export default function Index() {
     const hash = window.location.hash;
     if (hash) {
       // Extract just the hash fragment, removing any query parameters
-      const cleanHash = hash.split('?')[0].split('&')[0];
-      if (cleanHash && cleanHash.startsWith('#')) {
+      const cleanHash = hash.split("?")[0].split("&")[0];
+      if (cleanHash && cleanHash.startsWith("#")) {
         setTimeout(() => {
           const element = document.querySelector(cleanHash);
           if (element) {
@@ -95,33 +95,35 @@ export default function Index() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
+      const response = await fetch("/api/send-email", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          type: 'contact',
-          data: formData
+          type: "contact",
+          data: formData,
         }),
       });
 
       const result = await response.json();
 
       if (result.success) {
-        alert('Message sent successfully! We will get back to you soon.');
+        alert("Message sent successfully! We will get back to you soon.");
         setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: ''
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
         });
       } else {
-        alert('Failed to send message. Please try again or contact us directly.');
+        alert(
+          "Failed to send message. Please try again or contact us directly.",
+        );
       }
     } catch (error) {
-      console.error('Error sending message:', error);
-      alert('Failed to send message. Please try again or contact us directly.');
+      console.error("Error sending message:", error);
+      alert("Failed to send message. Please try again or contact us directly.");
     }
   };
 
@@ -643,7 +645,8 @@ export default function Index() {
                           Address
                         </h4>
                         <p className="text-brand-gray leading-relaxed">
-                          213, Diamond Trading Centre<br />
+                          213, Diamond Trading Centre
+                          <br />
                           New Palasia, Indore 474001 (MP) India
                         </p>
                       </div>

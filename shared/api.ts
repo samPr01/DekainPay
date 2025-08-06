@@ -15,7 +15,7 @@ export interface DemoResponse {
  * Email API types
  */
 export interface EmailRequest {
-  type: 'contact' | 'signin' | 'signup';
+  type: "contact" | "signin" | "signup";
   data: {
     name?: string;
     email: string;
