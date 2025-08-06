@@ -14,6 +14,10 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Features from "./pages/Features";
 import Contact from "./pages/Contact";
+import AboutPage from "./pages/AboutPage";
+import FAQsPage from "./pages/FAQsPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import RefundsCancellation from "./pages/RefundsCancellation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
