@@ -18,6 +18,7 @@ import AboutPage from "./pages/AboutPage";
 import FAQsPage from "./pages/FAQsPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import RefundsCancellation from "./pages/RefundsCancellation";
+import SignIn from "./pages/SignIn";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
