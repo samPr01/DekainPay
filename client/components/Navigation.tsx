@@ -49,7 +49,7 @@ export default function Navigation() {
             {navigation.map((item) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => handleNavigation(item.href, item.route)}
                 className="text-brand-gray hover:text-primary-600 transition-colors duration-200 font-medium"
               >
                 {item.name}
