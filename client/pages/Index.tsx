@@ -579,11 +579,11 @@ export default function Index() {
                       <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
                         <Mail className="h-6 w-6 text-primary-600" />
                       </div>
-                      <div>
+                      <div className="flex-1">
                         <h4 className="font-semibold text-brand-navy mb-1">
                           Email
                         </h4>
-                        <p className="text-brand-gray">
+                        <p className="text-brand-gray break-all">
                           agentxofficialwork@gmail.com
                         </p>
                       </div>
@@ -593,13 +593,12 @@ export default function Index() {
                       <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
                         <MapPin className="h-6 w-6 text-primary-600" />
                       </div>
-                      <div>
+                      <div className="flex-1">
                         <h4 className="font-semibold text-brand-navy mb-1">
                           Address
                         </h4>
-                        <p className="text-brand-gray">
-                          213, Diamond Trading Centre
-                          <br />
+                        <p className="text-brand-gray leading-relaxed">
+                          213, Diamond Trading Centre<br />
                           New Palasia Indore 452001
                         </p>
                       </div>
