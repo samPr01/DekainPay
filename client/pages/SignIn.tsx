@@ -38,16 +38,17 @@ export default function SignIn() {
                 <div className="w-10 h-10 bg-gradient-to-r from-primary-500 to-brand-teal rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">D</span>
                 </div>
-                <span className="text-2xl font-bold text-brand-navy">DekainPay</span>
+                <span className="text-2xl font-bold text-brand-navy">
+                  DekainPay
+                </span>
               </div>
               <h1 className="text-2xl font-bold text-brand-navy mb-2">
                 {isSignUp ? "Create Account" : "Welcome Back"}
               </h1>
               <p className="text-brand-gray">
-                {isSignUp 
+                {isSignUp
                   ? "Sign up to get started with DekainPay"
-                  : "Sign in to your DekainPay account"
-                }
+                  : "Sign in to your DekainPay account"}
               </p>
             </div>
 
@@ -91,7 +92,10 @@ export default function SignIn() {
 
               {/* Password field */}
               <div>
-                <Label htmlFor="password" className="text-brand-navy font-medium">
+                <Label
+                  htmlFor="password"
+                  className="text-brand-navy font-medium"
+                >
                   Password
                 </Label>
                 <div className="relative mt-2">
@@ -122,7 +126,10 @@ export default function SignIn() {
               {/* Confirm Password field - only for sign up */}
               {isSignUp && (
                 <div>
-                  <Label htmlFor="confirmPassword" className="text-brand-navy font-medium">
+                  <Label
+                    htmlFor="confirmPassword"
+                    className="text-brand-navy font-medium"
+                  >
                     Confirm Password
                   </Label>
                   <div className="relative mt-2">
@@ -139,7 +146,9 @@ export default function SignIn() {
                     <button
                       type="button"
                       className="absolute inset-y-0 right-0 pr-3 flex items-center"
-                      onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                      onClick={() =>
+                        setShowConfirmPassword(!showConfirmPassword)
+                      }
                     >
                       {showConfirmPassword ? (
                         <EyeOff className="h-5 w-5 text-brand-gray" />
@@ -176,7 +185,9 @@ export default function SignIn() {
             {/* Toggle between Sign In and Sign Up */}
             <div className="mt-8 text-center">
               <p className="text-brand-gray">
-                {isSignUp ? "Already have an account?" : "Don't have an account?"}
+                {isSignUp
+                  ? "Already have an account?"
+                  : "Don't have an account?"}
                 <button
                   type="button"
                   onClick={() => setIsSignUp(!isSignUp)}
@@ -192,11 +203,17 @@ export default function SignIn() {
               <div className="mt-6 text-center">
                 <p className="text-xs text-brand-gray">
                   By creating an account, you agree to our{" "}
-                  <a href="/privacy-policy" className="text-primary-600 hover:text-primary-700">
+                  <a
+                    href="/privacy-policy"
+                    className="text-primary-600 hover:text-primary-700"
+                  >
                     Privacy Policy
                   </a>{" "}
                   and{" "}
-                  <a href="/refunds-cancellation" className="text-primary-600 hover:text-primary-700">
+                  <a
+                    href="/refunds-cancellation"
+                    className="text-primary-600 hover:text-primary-700"
+                  >
                     Terms of Service
                   </a>
                 </p>
@@ -208,7 +225,10 @@ export default function SignIn() {
           <div className="mt-8 text-center">
             <p className="text-brand-gray text-sm">
               Need help?{" "}
-              <a href="mailto:agentxofficialwork@gmail.com" className="text-primary-600 hover:text-primary-700 font-medium">
+              <a
+                href="mailto:agentxofficialwork@gmail.com"
+                className="text-primary-600 hover:text-primary-700 font-medium"
+              >
                 Contact Support
               </a>
             </p>

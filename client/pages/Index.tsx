@@ -571,15 +571,21 @@ export default function Index() {
               {/* Contact Information */}
               <div className="space-y-8">
                 <div className="bg-white rounded-2xl shadow-lg p-8 border border-primary-100">
-                  <h3 className="text-2xl font-bold text-brand-navy mb-6">Get in Touch</h3>
+                  <h3 className="text-2xl font-bold text-brand-navy mb-6">
+                    Get in Touch
+                  </h3>
                   <div className="space-y-6">
                     <div className="flex items-start space-x-4">
                       <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
                         <Mail className="h-6 w-6 text-primary-600" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-brand-navy mb-1">Email</h4>
-                        <p className="text-brand-gray">agentxofficialwork@gmail.com</p>
+                        <h4 className="font-semibold text-brand-navy mb-1">
+                          Email
+                        </h4>
+                        <p className="text-brand-gray">
+                          agentxofficialwork@gmail.com
+                        </p>
                       </div>
                     </div>
 
@@ -588,9 +594,12 @@ export default function Index() {
                         <MapPin className="h-6 w-6 text-primary-600" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-brand-navy mb-1">Address</h4>
+                        <h4 className="font-semibold text-brand-navy mb-1">
+                          Address
+                        </h4>
                         <p className="text-brand-gray">
-                          213, Diamond Trading Centre<br />
+                          213, Diamond Trading Centre
+                          <br />
                           New Palasia Indore 452001
                         </p>
                       </div>
@@ -601,91 +610,93 @@ export default function Index() {
 
               {/* Contact Form */}
               <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12 border border-primary-100">
-                <h3 className="text-2xl font-bold text-brand-navy mb-6">Send us a Message</h3>
+                <h3 className="text-2xl font-bold text-brand-navy mb-6">
+                  Send us a Message
+                </h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <Label
+                        htmlFor="name"
+                        className="text-brand-navy font-medium"
+                      >
+                        Your Name
+                      </Label>
+                      <Input
+                        type="text"
+                        id="name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        className="mt-2 border-primary-200 focus:border-primary-500 focus:ring-primary-500"
+                        placeholder="Enter your full name"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <Label
+                        htmlFor="email"
+                        className="text-brand-navy font-medium"
+                      >
+                        Your Email
+                      </Label>
+                      <Input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        className="mt-2 border-primary-200 focus:border-primary-500 focus:ring-primary-500"
+                        placeholder="Enter your email address"
+                        required
+                      />
+                    </div>
+                  </div>
+
                   <div>
                     <Label
-                      htmlFor="name"
+                      htmlFor="subject"
                       className="text-brand-navy font-medium"
                     >
-                      Your Name
+                      Subject
                     </Label>
                     <Input
                       type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
+                      id="subject"
+                      name="subject"
+                      value={formData.subject}
                       onChange={handleChange}
                       className="mt-2 border-primary-200 focus:border-primary-500 focus:ring-primary-500"
-                      placeholder="Enter your full name"
+                      placeholder="Enter the subject of your inquiry"
                       required
                     />
                   </div>
 
                   <div>
                     <Label
-                      htmlFor="email"
+                      htmlFor="message"
                       className="text-brand-navy font-medium"
                     >
-                      Your Email
+                      Message
                     </Label>
-                    <Input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
+                    <Textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
                       onChange={handleChange}
-                      className="mt-2 border-primary-200 focus:border-primary-500 focus:ring-primary-500"
-                      placeholder="Enter your email address"
+                      className="mt-2 border-primary-200 focus:border-primary-500 focus:ring-primary-500 min-h-[120px]"
+                      placeholder="Enter your message or inquiry details"
                       required
                     />
                   </div>
-                </div>
 
-                <div>
-                  <Label
-                    htmlFor="subject"
-                    className="text-brand-navy font-medium"
+                  <Button
+                    type="submit"
+                    className="w-full bg-primary-500 hover:bg-primary-600 text-white py-3 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
                   >
-                    Subject
-                  </Label>
-                  <Input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="mt-2 border-primary-200 focus:border-primary-500 focus:ring-primary-500"
-                    placeholder="Enter the subject of your inquiry"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <Label
-                    htmlFor="message"
-                    className="text-brand-navy font-medium"
-                  >
-                    Message
-                  </Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="mt-2 border-primary-200 focus:border-primary-500 focus:ring-primary-500 min-h-[120px]"
-                    placeholder="Enter your message or inquiry details"
-                    required
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  className="w-full bg-primary-500 hover:bg-primary-600 text-white py-3 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
-                >
-                  Send Message
-                </Button>
+                    Send Message
+                  </Button>
                 </form>
               </div>
             </div>

@@ -15,21 +15,34 @@ export default function PrivacyPolicy() {
           <div className="prose prose-lg max-w-none">
             <div className="space-y-8">
               <section>
-                <h2 className="text-2xl font-bold text-brand-navy mb-4">1. Information We Collect</h2>
+                <h2 className="text-2xl font-bold text-brand-navy mb-4">
+                  1. Information We Collect
+                </h2>
                 <p className="text-brand-gray leading-relaxed mb-4">
-                  DekainPay collects information you provide directly to us, such as when you create an account, 
-                  make transactions, or contact us for support. This includes:
+                  DekainPay collects information you provide directly to us,
+                  such as when you create an account, make transactions, or
+                  contact us for support. This includes:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-brand-gray">
-                  <li>Personal identification information (name, email address, phone number)</li>
-                  <li>Financial information (bank account details, payment card information)</li>
+                  <li>
+                    Personal identification information (name, email address,
+                    phone number)
+                  </li>
+                  <li>
+                    Financial information (bank account details, payment card
+                    information)
+                  </li>
                   <li>Transaction data and payment history</li>
-                  <li>Communication records when you contact our support team</li>
+                  <li>
+                    Communication records when you contact our support team
+                  </li>
                 </ul>
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-brand-navy mb-4">2. How We Use Your Information</h2>
+                <h2 className="text-2xl font-bold text-brand-navy mb-4">
+                  2. How We Use Your Information
+                </h2>
                 <p className="text-brand-gray leading-relaxed mb-4">
                   We use the information we collect to:
                 </p>
@@ -39,35 +52,50 @@ export default function PrivacyPolicy() {
                   <li>Provide customer support and respond to inquiries</li>
                   <li>Improve our services and develop new features</li>
                   <li>Comply with legal and regulatory requirements</li>
-                  <li>Send important updates about your account and our services</li>
+                  <li>
+                    Send important updates about your account and our services
+                  </li>
                 </ul>
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-brand-navy mb-4">3. Information Sharing and Disclosure</h2>
+                <h2 className="text-2xl font-bold text-brand-navy mb-4">
+                  3. Information Sharing and Disclosure
+                </h2>
                 <p className="text-brand-gray leading-relaxed mb-4">
-                  We do not sell, trade, or otherwise transfer your personal information to third parties except in the following circumstances:
+                  We do not sell, trade, or otherwise transfer your personal
+                  information to third parties except in the following
+                  circumstances:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-brand-gray">
                   <li>With your explicit consent</li>
                   <li>To comply with legal obligations or court orders</li>
                   <li>To prevent fraud or protect our rights and property</li>
-                  <li>With trusted service providers who assist in our operations</li>
+                  <li>
+                    With trusted service providers who assist in our operations
+                  </li>
                   <li>In connection with a business transfer or acquisition</li>
                 </ul>
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-brand-navy mb-4">4. Data Security</h2>
+                <h2 className="text-2xl font-bold text-brand-navy mb-4">
+                  4. Data Security
+                </h2>
                 <p className="text-brand-gray leading-relaxed">
-                  We implement industry-standard security measures to protect your personal information, including:
-                  encryption, secure data transmission, regular security audits, and restricted access to personal data.
-                  However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.
+                  We implement industry-standard security measures to protect
+                  your personal information, including: encryption, secure data
+                  transmission, regular security audits, and restricted access
+                  to personal data. However, no method of transmission over the
+                  internet is 100% secure, and we cannot guarantee absolute
+                  security.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-brand-navy mb-4">5. Your Rights</h2>
+                <h2 className="text-2xl font-bold text-brand-navy mb-4">
+                  5. Your Rights
+                </h2>
                 <p className="text-brand-gray leading-relaxed mb-4">
                   You have the right to:
                 </p>
@@ -81,14 +109,20 @@ export default function PrivacyPolicy() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-brand-navy mb-4">6. Contact Us</h2>
+                <h2 className="text-2xl font-bold text-brand-navy mb-4">
+                  6. Contact Us
+                </h2>
                 <p className="text-brand-gray leading-relaxed">
-                  If you have any questions about this Privacy Policy or our data practices, please contact us at:
+                  If you have any questions about this Privacy Policy or our
+                  data practices, please contact us at:
                 </p>
                 <div className="mt-4 p-4 bg-primary-50 rounded-lg">
-                  <p className="text-brand-navy font-medium">Email: agentxofficialwork@gmail.com</p>
                   <p className="text-brand-navy font-medium">
-                    Address: 213, Diamond Trading Centre, New Palasia Indore 452001
+                    Email: agentxofficialwork@gmail.com
+                  </p>
+                  <p className="text-brand-navy font-medium">
+                    Address: 213, Diamond Trading Centre, New Palasia Indore
+                    452001
                   </p>
                 </div>
               </section>

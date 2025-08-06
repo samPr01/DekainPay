@@ -113,7 +113,7 @@ export default function FAQsPage() {
               security, and implementation.
             </p>
           </div>
-          
+
           <div className="bg-white rounded-2xl shadow-lg border border-primary-100 overflow-hidden">
             {faqs.map((faq, index) => (
               <FAQItem
@@ -125,7 +125,7 @@ export default function FAQsPage() {
               />
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <p className="text-brand-gray mb-6">
               Still have questions? Our support team is here to help.
@@ -133,11 +133,16 @@ export default function FAQsPage() {
             <div className="bg-primary-50 rounded-2xl p-8">
               <div className="space-y-4">
                 <p className="text-brand-navy font-medium">Contact Support:</p>
-                <p className="text-brand-navy font-medium">Email: agentxofficialwork@gmail.com</p>
                 <p className="text-brand-navy font-medium">
-                  Address: 213, Diamond Trading Centre, New Palasia Indore 452001
+                  Email: agentxofficialwork@gmail.com
                 </p>
-                <p className="text-brand-gray">Response time: Within 24 hours</p>
+                <p className="text-brand-navy font-medium">
+                  Address: 213, Diamond Trading Centre, New Palasia Indore
+                  452001
+                </p>
+                <p className="text-brand-gray">
+                  Response time: Within 24 hours
+                </p>
               </div>
             </div>
           </div>
