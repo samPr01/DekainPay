@@ -599,7 +599,7 @@ export default function Index() {
                         </h4>
                         <p className="text-brand-gray leading-relaxed">
                           213, Diamond Trading Centre<br />
-                          New Palasia Indore 452001
+                          New Palasia, Indore 452001 (MP) India
                         </p>
                       </div>
                     </div>
