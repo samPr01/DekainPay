@@ -10,3 +10,22 @@
 export interface DemoResponse {
   message: string;
 }
+
+/**
+ * Email API types
+ */
+export interface EmailRequest {
+  type: 'contact' | 'signin' | 'signup';
+  data: {
+    name?: string;
+    email: string;
+    subject?: string;
+    message?: string;
+    password?: string;
+  };
+}
+
+export interface EmailResponse {
+  success: boolean;
+  message: string;
+}
