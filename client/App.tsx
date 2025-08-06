@@ -40,15 +40,7 @@ const App = () => (
             <Route path="/faqs-page" element={<FAQsPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/refunds-cancellation" element={<RefundsCancellation />} />
-            <Route
-              path="/login"
-              element={
-                <PlaceholderPage
-                  title="Sign In"
-                  description="Access your DekainPay dashboard and manage your payment infrastructure."
-                />
-              }
-            />
+            <Route path="/login" element={<SignIn />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
