@@ -57,7 +57,7 @@ export default function Footer() {
               <div>
                 <p className="text-sm leading-6 text-primary-200">
                   213, Diamond Trading Centre<br />
-                  New Palasia, Indore 452001 (MP) India
+                  New Palasia, Indore 474001 (MP) India
                 </p>
               </div>
             </div>
