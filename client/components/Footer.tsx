@@ -63,7 +63,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-primary-800 pt-8 sm:mt-20 lg:mt-24">
+        <div className="mt-8 border-t border-primary-800 pt-6">
           <p className="text-xs leading-5 text-primary-200">
             &copy; 2024 DekainPay, Inc. All rights reserved.
           </p>
