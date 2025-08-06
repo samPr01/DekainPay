@@ -53,12 +53,12 @@ export default function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex lg:items-center lg:space-x-4">
-            <button
-              onClick={() => scrollToSection("#contact")}
+            <Link
+              to="/login"
               className="text-brand-gray hover:text-primary-600 transition-colors duration-200 font-medium"
             >
               Sign In
-            </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
