@@ -5,20 +5,26 @@ import { Button } from "@/components/ui/button";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const navigation = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Features", href: "#features" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "#home", route: "/" },
+    { name: "About", href: "#about", route: "/" },
+    { name: "Features", href: "#features", route: "/" },
+    { name: "Contact", href: "#contact", route: "/" },
   ];
 
-  const scrollToSection = (href: string) => {
-    if (href.startsWith("#")) {
+  const handleNavigation = (href: string, route: string) => {
+    if (location.pathname === route && href.startsWith("#")) {
+      // If we're on the home page, use smooth scroll
       const element = document.querySelector(href);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
+    } else {
+      // If we're on a different page, navigate to home page with the hash
+      navigate(route + href);
     }
     setIsOpen(false);
   };
