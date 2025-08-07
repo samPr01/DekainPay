@@ -27,8 +27,7 @@ export default function RefundsCancellation() {
                     option
                   </li>
                   <li>
-                    Contacting our customer support team at
-                    info@dekainpay.com
+                    Contacting our customer support team at info@dekainpay.com
                   </li>
                   <li>Sending a written notice to our business address</li>
                 </ul>
