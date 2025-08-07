@@ -80,7 +80,7 @@ export const handleSendEmail: RequestHandler = async (req, res) => {
 
     // Log the email data (in production, you would actually send the email)
     console.log("=== EMAIL TO SEND ===");
-    console.log("To: agentxofficialwork@gmail.com");
+    console.log("To: info@dekainpay.com");
     console.log("Subject:", emailSubject);
     console.log("Body:", emailBody);
     console.log("====================");
