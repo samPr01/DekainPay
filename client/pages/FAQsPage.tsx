@@ -134,7 +134,7 @@ export default function FAQsPage() {
               <div className="space-y-4">
                 <p className="text-brand-navy font-medium">Contact Support:</p>
                 <p className="text-brand-navy font-medium">
-                  Email: agentxofficialwork@gmail.com
+                  Email: info@dekainpay.com
                 </p>
                 <p className="text-brand-navy font-medium">
                   Address: 213, Diamond Trading Centre, New Palasia, Indore
