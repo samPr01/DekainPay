@@ -205,7 +205,7 @@ export default function AboutPage() {
           <div className="bg-primary-50 rounded-2xl p-8">
             <div className="space-y-4">
               <p className="text-brand-navy font-medium">
-                Email: agentxofficialwork@gmail.com
+                Email: info@dekainpay.com
               </p>
               <p className="text-brand-navy font-medium">
                 Address: 213, Diamond Trading Centre, New Palasia, Indore 474001
