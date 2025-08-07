@@ -116,7 +116,7 @@ export default function RefundsCancellation() {
                 </p>
                 <div className="mt-4 p-4 bg-primary-50 rounded-lg">
                   <p className="text-brand-navy font-medium">
-                    Email: agentxofficialwork@gmail.com
+                    Email: info@dekainpay.com
                   </p>
                   <p className="text-brand-navy font-medium">
                     Address: 213, Diamond Trading Centre, New Palasia, Indore
