@@ -275,7 +275,7 @@ export default function SignIn() {
             <p className="text-brand-gray text-sm">
               Need help?{" "}
               <a
-                href="mailto:agentxofficialwork@gmail.com"
+                href="mailto:info@dekainpay.com"
                 className="text-primary-600 hover:text-primary-700 font-medium"
               >
                 Contact Support
