@@ -33,16 +33,16 @@ export default function Navigation() {
   };
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md border-b border-primary-100">
+    <header className="fixed w-full top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Top">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-r from-primary-500 to-brand-teal rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">D</span>
+                <span className="text-white font-bold text-sm">W</span>
               </div>
-              <span className="text-xl font-bold text-brand-navy">
-                DekainPay
+              <span className="text-xl font-bold text-foreground">
+                WesternPay
               </span>
             </Link>
           </div>

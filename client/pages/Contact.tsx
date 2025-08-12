@@ -37,7 +37,7 @@ export default function Contact() {
               Contact
             </h1>
             <p className="text-lg leading-8 text-brand-gray">
-              Get in touch with our team to learn more about DekainPay
+              Get in touch with our team to learn more about WesternPay
               solutions.
             </p>
           </div>

@@ -11,7 +11,7 @@ export default function About() {
               About Us
             </h2>
             <p className="text-lg leading-8 text-brand-gray">
-              DekainPay revolutionizes digital payments with cutting-edge
+              WesternPay revolutionizes digital payments with cutting-edge
               technology, seamless user experiences, and enterprise-grade
               security. Transform how your business handles transactions with
               our innovative fintech solutions designed for the modern economy.

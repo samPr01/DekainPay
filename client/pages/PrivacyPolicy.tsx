@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
                   1. Information We Collect
                 </h2>
                 <p className="text-brand-gray leading-relaxed mb-4">
-                  DekainPay collects information you provide directly to us,
+                  WesternPay collects information you provide directly to us,
                   such as when you create an account, make transactions, or
                   contact us for support. This includes:
                 </p>
