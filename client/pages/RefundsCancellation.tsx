@@ -1,7 +1,7 @@
 export default function RefundsCancellation() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary-50/30 to-background pt-20">
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-card">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold tracking-tight text-brand-navy lg:text-5xl mb-6">
@@ -19,7 +19,7 @@ export default function RefundsCancellation() {
                   1. Service Cancellation
                 </h2>
                 <p className="text-brand-gray leading-relaxed mb-4">
-                  You may cancel your DekainPay service at any time by:
+                  You may cancel your WesternPay service at any time by:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-brand-gray">
                   <li>

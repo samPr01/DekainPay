@@ -46,22 +46,22 @@ export default function FAQsPage() {
     {
       question: "What security measures does WesternPay implement?",
       answer:
-        "DekainPay employs bank-grade encryption, multi-factor authentication, PCI DSS compliance, and advanced fraud detection algorithms. All transactions are processed through secure, encrypted channels with real-time monitoring to protect against threats.",
+        "WesternPay employs bank-grade encryption, multi-factor authentication, PCI DSS compliance, and advanced fraud detection algorithms. All transactions are processed through secure, encrypted channels with real-time monitoring to protect against threats.",
     },
     {
       question: "Which payment methods and currencies does WesternPay support?",
       answer:
-        "We support all major payment methods including credit/debit cards, digital wallets, bank transfers, and cryptocurrency. DekainPay processes transactions in 190+ countries with support for multiple currencies and automatic conversion.",
+        "We support all major payment methods including credit/debit cards, digital wallets, bank transfers, and cryptocurrency. WesternPay processes transactions in 190+ countries with support for multiple currencies and automatic conversion.",
     },
     {
       question: "How does WesternPay's pricing structure work?",
       answer:
-        "DekainPay offers transparent, competitive pricing with no hidden fees. Our rates are based on transaction volume with discounts for high-volume merchants. Contact our sales team for custom enterprise pricing tailored to your business needs.",
+        "WesternPay offers transparent, competitive pricing with no hidden fees. Our rates are based on transaction volume with discounts for high-volume merchants. Contact our sales team for custom enterprise pricing tailored to your business needs.",
     },
     {
       question: "Can WesternPay integrate with my existing business systems?",
       answer:
-        "Yes! DekainPay provides comprehensive APIs, SDKs, and pre-built integrations for popular platforms like Shopify, WooCommerce, and enterprise ERPs. Our developer-friendly documentation makes integration straightforward.",
+        "Yes! WesternPay provides comprehensive APIs, SDKs, and pre-built integrations for popular platforms like Shopify, WooCommerce, and enterprise ERPs. Our developer-friendly documentation makes integration straightforward.",
     },
     {
       question: "What kind of support does WesternPay provide?", 
@@ -102,7 +102,7 @@ export default function FAQsPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary-50/30 to-background pt-20">
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-card">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
             <h1 className="text-4xl font-bold tracking-tight text-brand-navy lg:text-5xl mb-6">
@@ -114,7 +114,7 @@ export default function FAQsPage() {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg border border-primary-100 overflow-hidden">
+          <div className="bg-card rounded-2xl shadow-lg border border-border overflow-hidden">
             {faqs.map((faq, index) => (
               <FAQItem
                 key={index}

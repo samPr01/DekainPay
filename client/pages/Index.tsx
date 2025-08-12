@@ -134,7 +134,7 @@ export default function Index() {
         "With our seamless onboarding process, you can start processing payments within 24 hours. Our quick setup wizard guides you through account verification, integration, and testing, ensuring you're ready to accept payments with minimal downtime.",
     },
     {
-      question: "What security measures does DekainPay implement?",
+      question: "What security measures does WesternPay implement?",
       answer:
         "WesternPay employs bank-grade encryption, multi-factor authentication, PCI DSS compliance, and advanced fraud detection algorithms. All transactions are processed through secure, encrypted channels with real-time monitoring to protect against threats.",
     },
@@ -229,7 +229,7 @@ export default function Index() {
                 </span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-brand-gray max-w-xl">
-                DekainPay revolutionizes digital payments with cutting-edge
+                WesternPay revolutionizes digital payments with cutting-edge
                 technology, seamless user experiences, and enterprise-grade
                 security. Transform how your business handles transactions.
               </p>
@@ -281,7 +281,7 @@ export default function Index() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-brand-navy lg:text-4xl">
-              Why Choose DekainPay?
+              Why Choose WesternPay?
             </h2>
             <p className="mt-4 text-lg leading-8 text-brand-gray">
               Built for the modern economy with features that scale with your
@@ -468,14 +468,14 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 lg:py-24 bg-white">
+      <section id="about" className="py-16 lg:py-24 bg-card">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center animate-fade-in">
             <h2 className="text-3xl font-bold tracking-tight text-brand-navy lg:text-4xl mb-6">
               About Us
             </h2>
             <p className="text-lg leading-8 text-brand-gray mb-16">
-              DekainPay revolutionizes digital payments with cutting-edge
+              WesternPay revolutionizes digital payments with cutting-edge
               technology, seamless user experiences, and enterprise-grade
               security. Transform how your business handles transactions with
               our innovative fintech solutions designed for the modern economy.

@@ -62,17 +62,17 @@ export default function Features() {
     {
       question: "Which payment methods and currencies does WesternPay support?",
       answer:
-        "We support all major payment methods including credit/debit cards, digital wallets, bank transfers, and cryptocurrency. DekainPay processes transactions in 190+ countries with support for multiple currencies and automatic conversion.",
+        "We support all major payment methods including credit/debit cards, digital wallets, bank transfers, and cryptocurrency. WesternPay processes transactions in 190+ countries with support for multiple currencies and automatic conversion.",
     },
     {
       question: "How does WesternPay's pricing structure work?",
       answer:
-        "DekainPay offers transparent, competitive pricing with no hidden fees. Our rates are based on transaction volume with discounts for high-volume merchants. Contact our sales team for custom enterprise pricing tailored to your business needs.",
+        "WesternPay offers transparent, competitive pricing with no hidden fees. Our rates are based on transaction volume with discounts for high-volume merchants. Contact our sales team for custom enterprise pricing tailored to your business needs.",
     },
     {
       question: "Can WesternPay integrate with my existing business systems?",
       answer:
-        "Yes! DekainPay provides comprehensive APIs, SDKs, and pre-built integrations for popular platforms like Shopify, WooCommerce, and enterprise ERPs. Our developer-friendly documentation makes integration straightforward.",
+        "Yes! WesternPay provides comprehensive APIs, SDKs, and pre-built integrations for popular platforms like Shopify, WooCommerce, and enterprise ERPs. Our developer-friendly documentation makes integration straightforward.",
     },
     {
       question: "What kind of support does WesternPay provide?",
@@ -152,7 +152,7 @@ export default function Features() {
               Check The Features
             </h1>
             <p className="text-lg leading-8 text-brand-gray">
-              Discover the powerful features that make DekainPay the preferred
+              Discover the powerful features that make WesternPay the preferred
               choice for businesses worldwide.
             </p>
           </div>
@@ -193,7 +193,7 @@ export default function Features() {
               Transform the Way You Handle Payments
             </h2>
             <p className="text-lg leading-8 text-primary-100 mb-8">
-              At DekainPay, we empower businesses with cutting-edge payment
+              At WesternPay, we empower businesses with cutting-edge payment
               solutions designed for speed, security, and simplicity. Whether
               you're processing customer transactions, managing payroll, or
               making vendor payments, our platform delivers the seamless
@@ -244,10 +244,10 @@ export default function Features() {
                 Our platform ensures seamless integrations, real-time tracking,
                 and unmatched security, so you can focus on growth without
                 worrying about the details. Experience faster, smarter, and more
-                reliable payments today with DekainPay.
+                reliable payments today with WesternPay.
               </p>
               <p className="text-lg leading-8 text-brand-gray">
-                With DekainPay, you can automate repetitive tasks, streamline
+                With WesternPay, you can automate repetitive tasks, streamline
                 financial workflows, and gain valuable insights into your
                 payment processes. Our user-friendly interface and powerful
                 features enable businesses of all sizes to manage transactions
@@ -319,7 +319,7 @@ export default function Features() {
               Empowering Your Business with Effortless Payments
             </h2>
             <p className="text-lg leading-8 text-brand-gray mb-8">
-              DekainPay is designed to simplify your financial transactions
+              WesternPay is designed to simplify your financial transactions
               while enhancing your business efficiency. With our seamless
               integrations, you can manage everything from instant payments to
               payroll and vendor payouts with ease. Our platform offers
@@ -396,7 +396,7 @@ export default function Features() {
               Frequently Asked Questions
             </h2>
             <p className="text-lg leading-8 text-brand-gray">
-              Get answers to common questions about DekainPay's features,
+              Get answers to common questions about WesternPay's features,
               security, and implementation.
             </p>
           </div>

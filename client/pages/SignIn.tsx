@@ -80,7 +80,7 @@ export default function SignIn() {
     <div className="min-h-screen bg-gradient-to-br from-background via-primary-50/30 to-background pt-20">
       <section className="py-16 lg:py-24">
         <div className="mx-auto max-w-md px-6">
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-primary-100">
+          <div className="bg-card rounded-2xl shadow-lg p-8 border border-border">
             {/* Header */}
             <div className="text-center mb-8">
               <div className="flex items-center justify-center space-x-2 mb-4">
@@ -88,7 +88,7 @@ export default function SignIn() {
                   <span className="text-white font-bold">D</span>
                 </div>
                 <span className="text-2xl font-bold text-brand-navy">
-                  DekainPay
+                 WesternPay
                 </span>
               </div>
               <h1 className="text-2xl font-bold text-brand-navy mb-2">
@@ -96,8 +96,8 @@ export default function SignIn() {
               </h1>
               <p className="text-brand-gray">
                 {isSignUp
-                  ? "Sign up to get started with DekainPay"
-                  : "Sign in to your DekainPay account"}
+                  ? "Sign up to get started with WesternPay"
+                  : "Sign in to your WesternPay account"}
               </p>
             </div>
 

@@ -20,13 +20,13 @@ export default function PlaceholderPage({
         <p className="text-lg text-brand-gray mb-8 max-w-2xl mx-auto">
           {description}
         </p>
-        <div className="bg-white rounded-2xl shadow-lg p-8 border border-primary-100 max-w-lg mx-auto">
+        <div className="bg-card rounded-2xl shadow-lg p-8 border border-border max-w-lg mx-auto">
           <h3 className="text-xl font-semibold text-brand-navy mb-4">
             Coming Soon
           </h3>
           <p className="text-brand-gray mb-6">
             This page is currently under development. We're working hard to
-            bring you comprehensive information about DekainPay's capabilities.
+            bring you comprehensive information about WesternPay's capabilities.
           </p>
           <Button className="bg-primary-500 hover:bg-primary-600 text-white w-full">
             Continue to Explore

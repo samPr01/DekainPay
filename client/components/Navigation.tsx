@@ -1,12 +1,14 @@
 import { useState } from "react";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight, Sun, Moon } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { useTheme } from "next-themes";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const { theme, setTheme } = useTheme();
 
   const navigation = [
     { name: "Home", href: "#home", route: "/" },
@@ -30,6 +32,10 @@ export default function Navigation() {
       navigate(route + cleanHref);
     }
     setIsOpen(false);
+  };
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   return (
@@ -62,6 +68,14 @@ export default function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex lg:items-center lg:space-x-4">
+            <Button
+              variant="ghost"
+              className="text-brand-gray"
+              aria-label="Toggle theme"
+              onClick={toggleTheme}
+            >
+              {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+            </Button>
             <Link
               to="/login"
               className="text-brand-gray hover:text-primary-600 transition-colors duration-200 font-medium"
@@ -71,11 +85,20 @@ export default function Navigation() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="lg:hidden">
+          <div className="lg:hidden flex items-center gap-2">
+            <Button
+              variant="ghost"
+              className="text-brand-gray"
+              aria-label="Toggle theme"
+              onClick={toggleTheme}
+            >
+              {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+            </Button>
             <Button
               variant="ghost"
               className="text-brand-gray"
               onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
             >
               {isOpen ? (
                 <X className="h-6 w-6" />

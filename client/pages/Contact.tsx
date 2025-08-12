@@ -30,7 +30,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary-50/30 to-background pt-20">
       {/* Header Section */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-card">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-brand-navy lg:text-5xl mb-6">
@@ -47,7 +47,7 @@ export default function Contact() {
       {/* Contact Form Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-br from-primary-50/30 to-background">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12 border border-primary-100">
+          <div className="bg-card rounded-2xl shadow-lg p-8 lg:p-12 border border-border">
             <h2 className="text-3xl font-bold tracking-tight text-brand-navy mb-8 text-center">
               Contact Us
             </h2>
