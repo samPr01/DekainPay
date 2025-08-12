@@ -27,7 +27,7 @@ export default function RefundsCancellation() {
                     option
                   </li>
                   <li>
-                    Contacting our customer support team at info@dekainpay.com
+                    Contacting our customer support team at info@westernpay.in
                   </li>
                   <li>Sending a written notice to our business address</li>
                 </ul>
@@ -115,7 +115,7 @@ export default function RefundsCancellation() {
                 </p>
                 <div className="mt-4 p-4 bg-primary-50 rounded-lg">
                   <p className="text-brand-navy font-medium">
-                    Email: info@dekainpay.com
+                    Email: info@westernpay.in
                   </p>
                   <p className="text-brand-navy font-medium">
                     Address: 213, Diamond Trading Centre, New Palasia, Indore

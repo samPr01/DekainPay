@@ -631,7 +631,7 @@ export default function Index() {
                           Email
                         </h4>
                         <p className="text-brand-gray break-all">
-                          info@dekainpay.com
+                          info@westernpay.in
                         </p>
                       </div>
                     </div>
