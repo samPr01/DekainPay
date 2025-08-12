@@ -200,7 +200,7 @@ export default function AboutPage() {
           </h2>
           <p className="text-lg leading-8 text-brand-gray mb-8">
             Ready to transform your payment infrastructure? Contact us today to
-            learn more about DekainPay solutions.
+            learn more about WesternPay solutions.
           </p>
           <div className="bg-primary-50 rounded-2xl p-8">
             <div className="space-y-4">

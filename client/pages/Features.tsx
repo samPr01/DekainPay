@@ -57,7 +57,7 @@ export default function Features() {
     {
       question: "What security measures does WesternPay implement?",
       answer:
-        "DekainPay employs bank-grade encryption, multi-factor authentication, PCI DSS compliance, and advanced fraud detection algorithms. All transactions are processed through secure, encrypted channels with real-time monitoring to protect against threats.",
+        "WesternPay employs bank-grade encryption, multi-factor authentication, PCI DSS compliance, and advanced fraud detection algorithms. All transactions are processed through secure, encrypted channels with real-time monitoring to protect against threats.",
     },
     {
       question: "Which payment methods and currencies does WesternPay support?",

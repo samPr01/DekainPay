@@ -81,10 +81,10 @@ export default function FAQsPage() {
     {
       question: "What countries does WesternPay operate in?",
       answer:
-        "DekainPay operates globally, supporting transactions in 190+ countries. We comply with local financial regulations and offer localized payment methods to ensure seamless transactions worldwide.",
+        "WesternPay operates globally, supporting transactions in 190+ countries. We comply with local financial regulations and offer localized payment methods to ensure seamless transactions worldwide.",
     },
     {
-      question: "How does DekainPay ensure data privacy and compliance?",
+      question: "How does WesternPay ensure data privacy and compliance?",
       answer:
         "We adhere to strict data privacy regulations including GDPR, PCI DSS, and SOC 2 compliance. Your data is encrypted, stored securely, and processed in accordance with international privacy standards.",
     },

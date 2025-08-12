@@ -141,12 +141,12 @@ export default function Index() {
     {
       question: "Which payment methods and currencies does WesternPay support?",
       answer:
-        "We support all major payment methods including credit/debit cards, digital wallets, bank transfers, and cryptocurrency. DekainPay processes transactions in 190+ countries with support for multiple currencies and automatic conversion.",
+        "We support all major payment methods including credit/debit cards, digital wallets, bank transfers, and cryptocurrency. WesternPay processes transactions in 190+ countries with support for multiple currencies and automatic conversion.",
     },
     {
       question: "How does WesternPay's pricing structure work?",
       answer:
-        "DekainPay offers transparent, competitive pricing with no hidden fees. Our rates are based on transaction volume with discounts for high-volume merchants. Contact our sales team for custom enterprise pricing tailored to your business needs.",
+        "WesternPay offers transparent, competitive pricing with no hidden fees. Our rates are based on transaction volume with discounts for high-volume merchants. Contact our sales team for custom enterprise pricing tailored to your business needs.",
     },
     {
       question: "Can WesternPay integrate with my existing business systems?",
@@ -372,7 +372,7 @@ export default function Index() {
                 Built for Scale, Designed for Simplicity
               </h2>
               <p className="text-lg text-brand-gray mb-8">
-                DekainPay combines powerful enterprise features with intuitive
+                WesternPay combines powerful enterprise features with intuitive
                 design. Our platform grows with your business, from startup to
                 enterprise.
               </p>
@@ -545,7 +545,7 @@ export default function Index() {
               Comprehensive Features
             </h2>
             <p className="text-lg leading-8 text-brand-gray">
-              Discover the powerful features that make DekainPay the preferred
+              Discover the powerful features that make WesternPay the preferred
               choice for businesses worldwide.
             </p>
           </div>
@@ -579,7 +579,7 @@ export default function Index() {
               Frequently Asked Questions
             </h2>
             <p className="text-lg leading-8 text-brand-gray">
-              Get answers to common questions about DekainPay's features,
+              Get answers to common questions about WesternPay's features,
               security, and implementation.
             </p>
           </div>
@@ -608,7 +608,7 @@ export default function Index() {
               Contact Us
             </h2>
             <p className="text-lg leading-8 text-brand-gray">
-              Get in touch with our team to learn more about DekainPay
+              Get in touch with our team to learn more about WesternPay
               solutions.
             </p>
           </div>
