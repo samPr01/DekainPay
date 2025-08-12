@@ -129,32 +129,32 @@ export default function Index() {
 
   const faqs = [
     {
-      question: "How quickly can I start processing payments with DekainPay?",
+      question: "How quickly can I start processing payments with WesternPay?",
       answer:
         "With our seamless onboarding process, you can start processing payments within 24 hours. Our quick setup wizard guides you through account verification, integration, and testing, ensuring you're ready to accept payments with minimal downtime.",
     },
     {
-      question: "What security measures does DekainPay implement?",
+      question: "What security measures does WesternPay implement?",
       answer:
-        "DekainPay employs bank-grade encryption, multi-factor authentication, PCI DSS compliance, and advanced fraud detection algorithms. All transactions are processed through secure, encrypted channels with real-time monitoring to protect against threats.",
+        "WesternPay employs bank-grade encryption, multi-factor authentication, PCI DSS compliance, and advanced fraud detection algorithms. All transactions are processed through secure, encrypted channels with real-time monitoring to protect against threats.",
     },
     {
-      question: "Which payment methods and currencies does DekainPay support?",
+      question: "Which payment methods and currencies does WesternPay support?",
       answer:
-        "We support all major payment methods including credit/debit cards, digital wallets, bank transfers, and cryptocurrency. DekainPay processes transactions in 190+ countries with support for multiple currencies and automatic conversion.",
+        "We support all major payment methods including credit/debit cards, digital wallets, bank transfers, and cryptocurrency. WesternPay processes transactions in 190+ countries with support for multiple currencies and automatic conversion.",
     },
     {
-      question: "How does DekainPay's pricing structure work?",
+      question: "How does WesternPay's pricing structure work?",
       answer:
-        "DekainPay offers transparent, competitive pricing with no hidden fees. Our rates are based on transaction volume with discounts for high-volume merchants. Contact our sales team for custom enterprise pricing tailored to your business needs.",
+        "WesternPay offers transparent, competitive pricing with no hidden fees. Our rates are based on transaction volume with discounts for high-volume merchants. Contact our sales team for custom enterprise pricing tailored to your business needs.",
     },
     {
-      question: "Can DekainPay integrate with my existing business systems?",
+      question: "Can WesternPay integrate with my existing business systems?",
       answer:
-        "Yes! DekainPay provides comprehensive APIs, SDKs, and pre-built integrations for popular platforms like Shopify, WooCommerce, and enterprise ERPs. Our developer-friendly documentation makes integration straightforward.",
+        "Yes! WesternPay provides comprehensive APIs, SDKs, and pre-built integrations for popular platforms like Shopify, WooCommerce, and enterprise ERPs. Our developer-friendly documentation makes integration straightforward.",
     },
     {
-      question: "What kind of support does DekainPay provide?",
+      question: "What kind of support does WesternPay provide?",
       answer:
         "We offer 24/7 customer support through multiple channels including live chat, email, and phone. Our dedicated support team includes technical specialists who can assist with integration, troubleshooting, and optimization.",
     },
@@ -229,7 +229,7 @@ export default function Index() {
                 </span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-brand-gray max-w-xl">
-                DekainPay revolutionizes digital payments with cutting-edge
+                WesternPay revolutionizes digital payments with cutting-edge
                 technology, seamless user experiences, and enterprise-grade
                 security. Transform how your business handles transactions.
               </p>
@@ -281,7 +281,7 @@ export default function Index() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-brand-navy lg:text-4xl">
-              Why Choose DekainPay?
+              Why Choose WesternPay?
             </h2>
             <p className="mt-4 text-lg leading-8 text-brand-gray">
               Built for the modern economy with features that scale with your
@@ -372,7 +372,7 @@ export default function Index() {
                 Built for Scale, Designed for Simplicity
               </h2>
               <p className="text-lg text-brand-gray mb-8">
-                DekainPay combines powerful enterprise features with intuitive
+                WesternPay combines powerful enterprise features with intuitive
                 design. Our platform grows with your business, from startup to
                 enterprise.
               </p>
@@ -468,14 +468,14 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 lg:py-24 bg-white">
+      <section id="about" className="py-16 lg:py-24 bg-card">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center animate-fade-in">
             <h2 className="text-3xl font-bold tracking-tight text-brand-navy lg:text-4xl mb-6">
               About Us
             </h2>
             <p className="text-lg leading-8 text-brand-gray mb-16">
-              DekainPay revolutionizes digital payments with cutting-edge
+              WesternPay revolutionizes digital payments with cutting-edge
               technology, seamless user experiences, and enterprise-grade
               security. Transform how your business handles transactions with
               our innovative fintech solutions designed for the modern economy.
@@ -545,7 +545,7 @@ export default function Index() {
               Comprehensive Features
             </h2>
             <p className="text-lg leading-8 text-brand-gray">
-              Discover the powerful features that make DekainPay the preferred
+              Discover the powerful features that make WesternPay the preferred
               choice for businesses worldwide.
             </p>
           </div>
@@ -579,7 +579,7 @@ export default function Index() {
               Frequently Asked Questions
             </h2>
             <p className="text-lg leading-8 text-brand-gray">
-              Get answers to common questions about DekainPay's features,
+              Get answers to common questions about WesternPay's features,
               security, and implementation.
             </p>
           </div>
@@ -608,7 +608,7 @@ export default function Index() {
               Contact Us
             </h2>
             <p className="text-lg leading-8 text-brand-gray">
-              Get in touch with our team to learn more about DekainPay
+              Get in touch with our team to learn more about WesternPay
               solutions.
             </p>
           </div>
@@ -631,7 +631,7 @@ export default function Index() {
                           Email
                         </h4>
                         <p className="text-brand-gray break-all">
-                          info@dekainpay.com
+                          info@westernpay.in
                         </p>
                       </div>
                     </div>

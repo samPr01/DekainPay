@@ -37,7 +37,7 @@ export const handleSendEmail: RequestHandler = async (req, res) => {
       case "contact":
         emailSubject = `Contact Form: ${data.subject || "New Inquiry"}`;
         emailBody = `
-          New contact form submission from DekainPay website:
+          New contact form submission from WesternPay website:
           
           Name: ${data.name || "Not provided"}
           Email: ${data.email}
@@ -49,9 +49,9 @@ export const handleSendEmail: RequestHandler = async (req, res) => {
         break;
 
       case "signin":
-        emailSubject = "DekainPay Sign In Attempt";
+        emailSubject = "WesternPay Sign In Attempt";
         emailBody = `
-          Sign in attempt from DekainPay website:
+          Sign in attempt from WesternPay website:
           
           Email: ${data.email}
           Timestamp: ${new Date().toISOString()}
@@ -60,9 +60,9 @@ export const handleSendEmail: RequestHandler = async (req, res) => {
         break;
 
       case "signup":
-        emailSubject = "New DekainPay Sign Up";
+        emailSubject = "New WesternPay Sign Up";
         emailBody = `
-          New user registration from DekainPay website:
+          New user registration from WesternPay website:
           
           Name: ${data.name || "Not provided"}
           Email: ${data.email}
@@ -80,7 +80,7 @@ export const handleSendEmail: RequestHandler = async (req, res) => {
 
     // Log the email data (in production, you would actually send the email)
     console.log("=== EMAIL TO SEND ===");
-    console.log("To: info@dekainpay.com");
+    console.log("To: info@westernpay.in");
     console.log("Subject:", emailSubject);
     console.log("Body:", emailBody);
     console.log("====================");

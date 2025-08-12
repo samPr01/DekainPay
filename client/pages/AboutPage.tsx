@@ -8,10 +8,10 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center animate-fade-in">
             <h1 className="text-4xl font-bold tracking-tight text-brand-navy lg:text-5xl mb-6">
-              About DekainPay
+              About WesternPay
             </h1>
             <p className="text-lg leading-8 text-brand-gray mb-16">
-              DekainPay revolutionizes digital payments with cutting-edge
+              WesternPay revolutionizes digital payments with cutting-edge
               technology, seamless user experiences, and enterprise-grade
               security. Transform how your business handles transactions with
               our innovative fintech solutions designed for the modern economy.
@@ -103,7 +103,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-brand-navy lg:text-4xl mb-6">
-              Why Choose DekainPay?
+              Why Choose WesternPay?
             </h2>
             <p className="text-lg leading-8 text-brand-gray">
               We combine innovative technology with unmatched reliability to
@@ -200,12 +200,12 @@ export default function AboutPage() {
           </h2>
           <p className="text-lg leading-8 text-brand-gray mb-8">
             Ready to transform your payment infrastructure? Contact us today to
-            learn more about DekainPay solutions.
+            learn more about WesternPay solutions.
           </p>
           <div className="bg-primary-50 rounded-2xl p-8">
             <div className="space-y-4">
               <p className="text-brand-navy font-medium">
-                Email: info@dekainpay.com
+                Email: info@westernpay.in
               </p>
               <p className="text-brand-navy font-medium">
                 Address: 213, Diamond Trading Centre, New Palasia, Indore 474001

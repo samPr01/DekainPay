@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
                   1. Information We Collect
                 </h2>
                 <p className="text-brand-gray leading-relaxed mb-4">
-                  DekainPay collects information you provide directly to us,
+                  WesternPay collects information you provide directly to us,
                   such as when you create an account, make transactions, or
                   contact us for support. This includes:
                 </p>
@@ -118,7 +118,7 @@ export default function PrivacyPolicy() {
                 </p>
                 <div className="mt-4 p-4 bg-primary-50 rounded-lg">
                   <p className="text-brand-navy font-medium">
-                    Email: info@dekainpay.com
+                    Email: info@westernpay.in
                   </p>
                   <p className="text-brand-navy font-medium">
                     Address: 213, Diamond Trading Centre, New Palasia, Indore

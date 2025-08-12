@@ -12,7 +12,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-brand-navy" aria-labelledby="footer-heading">
+    <footer className="bg-background" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -22,9 +22,9 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-r from-primary-500 to-brand-teal rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">D</span>
+                <span className="text-white font-bold text-sm">W</span>
               </div>
-              <span className="text-xl font-bold text-white">DekainPay</span>
+              <span className="text-xl font-bold text-white">WesternPay</span>
             </div>
             <p className="text-sm leading-6 text-primary-200 max-w-md">
               Revolutionizing digital payments with cutting-edge technology,
@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 border-t border-primary-800 pt-6">
           <p className="text-xs leading-5 text-primary-200">
-            &copy; 2024 DekainPay, Inc. All rights reserved.
+            &copy; 2024 WesternPay, Inc. All rights reserved.
           </p>
         </div>
       </div>
